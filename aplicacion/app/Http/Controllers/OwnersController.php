@@ -53,9 +53,9 @@ class OwnersController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|max:255',
             'last_name' => 'required|max:255',
-            'ci' => 'required|digits_between:4,8|numeric|unique:peoples',
-            'phone' => 'required|numeric|unique:phones,number',
-            'birth' => 'required|date_format:"d-m-Y"',
+            'ci' => 'digits_between:4,8|numeric|unique:peoples',
+            'phone' => 'numeric|unique:phones,number',
+            'birth' => 'date_format:"d-m-Y"',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
             'apartments' => 'required|array|not_in:0',

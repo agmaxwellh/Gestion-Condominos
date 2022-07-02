@@ -9,7 +9,7 @@
     <div id="app">
         <div class="login-box">
             <div class="login-logo">
-                <b>Gestión</b> de Condominios
+                <b>Rosal</b> Plaza - Torre B
             </div><!-- /.login-logo -->
 
         @if (count($errors) > 0)

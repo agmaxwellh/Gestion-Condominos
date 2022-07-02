@@ -1,9 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     $towers = \App\Tower::count();
     return view('welcome', compact('towers'));
-});
+})->name('root');
 
 /*Route::get('test', function () {
   //return \App\Tower::with('apartments')->get();
